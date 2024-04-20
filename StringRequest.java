@@ -20,12 +20,13 @@ public class StringRequest {
     }
 
     public void wordscounter(){
-        int words = 0;
+        int spaces = 0;
         for (char c : str.toCharArray()) {
-            if (c != ' ') {
-                words += 1;
+            if (c == ' ') {
+                spaces += 1;
             }
         }
+        int words = spaces + 1;
         System.out.println(words);
     }
 
